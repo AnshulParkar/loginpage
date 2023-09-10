@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginpage.css" />
+</head>
+<body>
+    <!-- Start Login -->
+    <div class="overlay">
+        <span class="fas fa-times"></span>
+        <div class="login-form">
+            <div class="content">
+                <h2>User Login</h2>
+                <form action="login.php" method="POST"> <!-- Specify the action and method for form submission -->
+                    <input type="email" name="email" placeholder="Email" required />
+                    <input type="password" name="password" placeholder="Password" required />
+                    <p class="forget-pass">
+                        Forgot Your Password? <a href="#">Click Here</a>
+                    </p>
+                    <input type="submit" value="Login" />
+                </form>
+                <p class="other">Or Login With</p>
+                <div class="social">
+                    <a href="#">Google</a>
+                    <a href="#">Facebook</a>
+                </div>
+                <p class="create">
+                    Don't Have An Account? <a href="#">Create One</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End Login -->
+    <script> src="loginpage.js" </script>
+</body>
+</html>
